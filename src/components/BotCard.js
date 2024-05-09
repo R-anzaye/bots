@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 
 const botTypeClasses = {
@@ -11,11 +9,7 @@ const botTypeClasses = {
   Captain: "icon star",
 };
 
-function BotCard({ bot, handleClickBotCard, enlistBot }) {
-  const handleEnlist = () => {
-    enlistBot(bot);
-  };
-
+function BotCard({ bot, handleClickBotCard }) {
   return (
     <div className="ui column">
       <div className="ui card" onClick={() => handleClickBotCard(bot)}>
