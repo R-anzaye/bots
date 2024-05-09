@@ -14,7 +14,7 @@ function BotsPage() {
   }, []);
 
   const fetchBots = () => {
-    fetch('http://localhost:8002/bots')
+    fetch('https://bots-rzaq.onrender.com/bots')
       .then((response) => response.json())
       .then((data) => setBots(data))
       .catch((error) => console.error('Error fetching bots:', error));
